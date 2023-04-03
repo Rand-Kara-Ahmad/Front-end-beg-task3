@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman";
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100vw;
+    align-items: center;
+}
+
+nav .logo {
+    margin-left: 20px;
+}
+
+nav .logo span {
+    color: black;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+nav .items {
+    margin-right: 20px;
+    gap: 50px;
+    display: flex;
+
+}
+
+nav .items a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.hero {
+    background-image: url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 540px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contain {
+    display: flex;
+    font-size: 78px;
+    color: white;
+    gap: 15px;
+}
+
+.first {
+    width: 115px;
+    height: 95px;
+    background-color: rgba(77, 85, 96, 0.63);
+    align-items: center;
+
+}
+
+.projects, .about, .contact, .employees {
+    margin: 0 20px;
+    max-width: 100vw;
+}
+
+.projects h1, .about h1, .contact h1, .employees h1 {
+    border-bottom: 2px solid grey;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.projects .projects-container, .employees .employees-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.projects .projects-container .card,
+.employees .employees-container .card {
+    max-width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.projects .projects-container .card img {
+    width: 100%;
+}
+
+.projects .projects-container .card p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+}
+
+.about p {
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.contact form {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+.contact .sub {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+}
+
+.employees .employees-container .card {
+    position: static;
+}
+
+.employees .employees-container .card .img {
+    width: 100%;
+}
+
+.employees .employees-container .card .info {
+    width: 50%;
+}
+
+.employees .employees-container {
+    gap: 0;
+    padding-left: 60px;
+}
+
+.employees .employees-container .card p {
+    padding-top: 10px;
+}
+
+.employees .employees-container .card .job {
+    color: gray;
+}
+
+.employees .employees-container .card button {
+    width: 80%;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    max-width: 100vw;
+    height: 50px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+}
+footer p span {
+    color: yellow;
+    margin: auto;
+}
